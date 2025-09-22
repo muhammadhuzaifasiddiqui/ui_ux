@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+
+/* header */
+.logo {
+  font-size: 20px;
+}
+
+.logo-wrapper {
+  height: 50px;
+  width: 120px;
+}
+
+.navbar {
+  z-index: 100;
+  width: calc(100% - 100px);
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+.navbar.scroll-down {
+  z-index: 100;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #f4ede480;
+  box-shadow: 0 0 24px #00000026;
+}
+
+.navbar.scroll-down .nav-container {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: none;
+  border-radius: none;
+  max-width: 1140px;
+  padding: 8px 20px;
+  box-shadow: none;
+}
+
+.navbar .nav-container {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #f4ede480;
+  border-radius: 10px;
+  max-width: 1140px;
+  padding: 8px 20px;
+  box-shadow: 0 0 24px #00000026;
+}
+
+.navbar .nav-link.active,
+.navbar-section .nav-link:hover {
+  color: #911e3d;
+  font-weight: 400;
+}
+
+.navbar .nav-link {
+  padding: 10px 6px;
+  transition: all 0.2s;
+}
+
+.nav-icon {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-toggle-btn {
+  padding: 8px;
+}
