@@ -50,7 +50,7 @@ const Navbar = () => {
             </div>
             <div className="lg:flex hidden navbar-menu items-center justify-center gap-2 xl:gap-8">
               <a className="fs-16 nav-link fw-normal active" href="#navbar">
-                Home
+                Home Page
               </a>
               <a className="fs-16 nav-link font-normal" href="#trusted">
                 About
